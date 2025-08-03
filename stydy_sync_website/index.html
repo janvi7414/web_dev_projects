@@ -14,8 +14,7 @@
             font-family:"Arial", monospace;
         }
         .background{
-            height:100vh;
-            width:100vw;
+            width:100%;
             background-color:beige;
             display:flex;
             flex-direction:column;
@@ -77,13 +76,19 @@
             margin:auto;
             border:solid 0.2rem #2a2ac8;
             border-radius:0.4rem;
+            text-decoration:none;
+
 
         }
         #body1{
             width:100vw;
             display:flex;
             flex-direction:row;
-            justify-content:space-evenly;
+            /*            grid-template-columns:repeat(2, 1fr);*/
+            justify-content:space-around;
+            flex-wrap:wrap;
+
+
         }
         #text{
             height:400px;
@@ -104,6 +109,14 @@
             flex-direction:row;
             gap:1rem;
             justify-content:flex-start;
+        }
+        @media (max-width:1000px){
+            #text{
+                text-align:center;
+            }
+            #buttons{
+                justify-content:center;
+            }
         }
         #intro_heading_text{
             display:flex;
@@ -133,6 +146,7 @@
             padding:0.4rem;
             padding-left:1rem;
             padding-right:1rem;
+            text-decoration:none;
         }
         #start_now_button:hover{
             transform:scale(1.02);
@@ -145,9 +159,60 @@
             padding:0.4rem;
             padding-left:1rem;
             padding-right:1rem;
+            text-decoration:none;
+
         }
         #take_tour_button:hover{
             transform:scale(1.02);
+        }
+        #trusted_companies{
+            display:flex;
+            flex-direction:column;
+            margin-top:3rem;
+            align-items:center;
+            padding:1rem;
+            justify-content:space-around;
+            gap:1rem;
+        }
+        #trusted_companies_text{
+            font-size:1.3rem;
+            font-weight:600;
+            color:#686868;
+        }
+        .comp{
+            display:flex;
+            flex-direction:row;
+            gap:0.4rem;
+        }
+        #companies_name_logo{
+            background-color:#d1cfcf;
+            display:flex;
+            flex-direction:row;
+            align-items:center;
+            padding:1rem;
+            justify-content:space-around;
+            gap:2rem;
+            border-radius:0.2rem;
+        }
+        .comp_logo{
+            height:1.5rem;
+            width:1.5rem;
+            border:solid 0.1rem #686868;
+            border-radius:50%;
+            color:grey;
+        }
+        .comp_name{
+            color:#686868;
+            text-size:0.4rem;
+            font-weight:600;
+            align-content:center;
+        }
+        @media (max-width:1000px){
+            #companies_name_logo{
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+
+            }
         }
 
     </style>
@@ -167,7 +232,7 @@
             <a class="nav_option_item" href="#">About</a>
         </div>
         <div id="contact_div">
-            <div id="contact_button">Contact us</div>
+            <a id="contact_button" href="#">Contact us</a>
         </div>
     </header>
     <div id="body1">
@@ -183,13 +248,35 @@
                 journey to simplify education and unlock
                 your full potential</span>
             <span id="buttons">
-                <span id="start_now_button">Start now</span>
-                <span id="take_tour_button">Take tour</span>
+                <a id="start_now_button" href="#">Start now</a>
+                <a id="take_tour_button" href="#">Take tour</a>
             </span>
         </div>
         <div id="body1_image"></div>
     </div>
+    <div id="trusted_companies">
+        <span id="trusted_companies_text">Trusted by the best</span>
+        <div id="companies_name_logo">
+            <div id="comp1" class="comp">
+                <img class="comp_logo" src="assets/google_logo.png" alt="G">
+                <div class="comp_name">Google</div>
+            </div>
+            <div id="comp2" class="comp">
+                <img class="comp_logo" src="assets/microsoft_logo.png" alt="M">
+                <div class="comp_name">Microsoft</div>
+            </div>
+            <div id="comp3" class="comp">
+                <img class="comp_logo" src="assets/linkedin_logo.png" alt="L">
+                <div class="comp_name">LinkedIn</div>
+            </div>
+            <div id="comp4" class="comp">
+                <img class="comp_logo" src="assets/facebook_logo.png" alt="F">
+                <div class="comp_name">Facebook</div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 </body>
 </html>
