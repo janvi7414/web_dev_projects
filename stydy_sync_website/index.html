@@ -250,10 +250,14 @@
             background-color:#d1cfcf;
             width:100vw;
         }
+        #advantages{
+            display:flex;
+            flex-direction: column;
+        }
         #adv_text_div{
             display:flex;
             flex-direction:column;
-            justify-content:space-evenly;
+            /*            justify-content:space-evenly;*/
             align-items:center;
             padding:2rem;
             gap:1.2rem;
@@ -265,6 +269,64 @@
         #adv_desc{
             font-size:1rem;
             width:45vw;
+            text-align:center;
+        }
+        #adv_cards_div{
+            display:grid;
+            grid-template-columns:repeat(2,1fr);
+            align-self:center;
+            width:45vw;
+            justify-content:center;
+            gap:1.7rem;
+        }
+        .cards{
+            height:200px;
+            box-sizing:border-box;
+            border-radius:0.4rem;
+            display:flex;
+            flex-direction:column;
+            padding:1.4rem 1.6rem;
+            gap:1rem;
+            align-items:center;
+
+        }
+        #card1{
+            background-color:rgba(52,52,174,0.4);
+        }
+        #card2{
+            background-color:rgba(216,75,75,0.4);
+        }
+        #card3{
+            background-color:rgba(255,187,62,0.4);
+        }
+        #card4{
+            background-color:rgba(156,205,65,0.4);
+        }
+        #card5{
+            background-color:rgba(22,138,22,0.4);
+        }
+        #card6{
+            background-color:rgba(108, 16, 184, 0.4);
+        }
+
+/*        inside each tile*/
+        .tile_icon{
+            padding:0.3rem;
+            height:2rem;
+            width:2rem;
+            border:none;
+            border-radius:50%;
+            background-color:white;
+        }
+        .tile_text_heading{
+            font-size:1.2rem;
+            font-weight:600;
+            color:white;
+
+        }
+        .tile_text_desc{
+            font-size:0.9rem;
+            color:white;
             text-align:center;
         }
 
@@ -341,6 +403,48 @@
                 practice quizzes, and interactive learning tools. Boost your scores
                 and study smarter with resources tailored just for you.
             </span>
+        </div>
+        <div id="adv_cards_div">
+            <div class="cards" id="card1">
+                <img id="card1_tile_icon" src="assets/bulb_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Personalized Learning</span>
+                <span class="tile_text_desc">Offer tailored learning experience through AI and machine
+                    learning to cater to individual student needs.</span>
+            </div>
+            <div class="cards" id="card2">
+                <img id="card2_tile_icon" src="assets/mobile_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Affordability</span>
+                <span class="tile_text_desc">Provide high-quality education
+                at an affordable price point, making it accessible to
+                a broader audience.</span>
+            </div>
+            <div class="cards" id="card3">
+                <img id="card3_tile_icon" src="assets/handshake_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Industry Partnership</span>
+                <span class="tile_text_desc">collaborate with well-known
+                companies and institutions to offer accredited courses
+                and certifications, adding credibility to your offerings.</span>
+            </div>
+            <div class="cards" id="card4">
+                <img id="card4_tile_icon" src="assets/computer_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Innovative Technology</span>
+                <span class="tile_text_desc">Utilize cutting-edge technologyy,
+                such as augmented reality or virtual reality, to
+                create immersive learning experiences.</span>
+            </div>
+            <div class="cards" id="card5">
+                <img id="card5_tile_icon" src="assets/phone_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Responsive Support</span>
+                <span class="tile_text_desc">Provide exceptional customer support
+                and assistance to students and educators.</span>
+            </div>
+            <div class="cards" id="card6">
+                <img id="card6_tile_icon" src="assets/growth_icon.png" alt="image" class="tile_icon"/>
+                <span class="tile_text_heading">Analytics and Insights</span>
+                <span class="tile_text_desc">Offer detailed progress
+                tracking and analytics to help students and teachers
+                monitor performance and make data-driven decisions.</span>
+            </div>
         </div>
     </div>
     <div class="adv_tiles"></div>
