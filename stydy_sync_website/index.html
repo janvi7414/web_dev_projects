@@ -416,10 +416,59 @@
         #newsletter_div{
             display:flex;
             flex-direction:row;
-            height:200px;
+            height:250px;
             width:60vw;
             align-self:center;
-            background-color:green;
+            background-color:#26e426c2;
+        }
+        #newsletter_image{
+            background-color:blue;
+            width:50%;
+        }
+        #newsletter_form_div{
+            background-color:#e4dddd;
+            width:50%;
+            display:flex;
+            flex-direction:column;
+            padding:2rem;
+            justify-content:center;
+            gap:0.5rem;
+        }
+        #newsletter_form_heading{
+            font-size:2rem;
+            font-weight:750;
+            color:blue;
+        }
+        #input_area_button_div{
+
+        }
+        #newsletter_form_subheading, #form_footer{
+            font-size:0.6rem;
+        }
+        input{
+            padding:0.4rem;
+/*            padding for placeholder from all the sides
+              to add padding from start only use text-indent*/
+            width:250px;
+            border-radius:0.2rem;
+            border:none;
+            margin-right:0.2rem;
+        }
+/*        #input_area:focus{*/
+/*            box-shadow:20px;*/
+/*        }*/
+
+        #send_button{
+            background-color:blue;
+            padding:0.4rem;
+            width:50px;
+            color:white;
+            border:none;
+            border-radius:0.2rem;
+
+        }
+        .anchor_tag{
+            color:blue;
         }
 
 
@@ -645,8 +694,20 @@
     </div>
 <!--    newsletter sec-->
     <div id="newsletter_div">
-        <img id="newsletter_image" src="" alt="loading..!"/>
-        <div id="newsletter_form_div"></div>
+        <img id="newsletter_image" src="" alt=""/>
+        <div id="newsletter_form_div">
+            <div id="newsletter_form_heading">Get the latest updates</div>
+            <div id="newsletter_form_subheading">Sign up for our newsletter</div>
+            <form id="input_area_button_div">
+                <label>
+                    <input id="text_area" type="email" placeholder="Email">
+                </label>
+                <button id="send_button">Send</button>
+            </form>
+            <div id="form_footer">By signing up to our newsletter
+                you agree to our <a href="#" class="anchor_tag">Term of Service</a>
+                and <a href="#" class="anchor_tag">Privacy Policy.</a></div>
+        </div>
     </div>
 </div>
 
