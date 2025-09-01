@@ -68,7 +68,7 @@
         }
 
         #contact_div:hover{
-            transform:scale(1.02);
+            transform:scale(1.04);
         }
         #contact_button{
             color:white;
@@ -180,7 +180,7 @@
             text-decoration:none;
         }
         #start_now_button:hover{
-            transform:scale(1.02);
+            transform:scale(1.04);
         }
         #take_tour_button{
             border:solid 0.2rem black;
@@ -192,7 +192,7 @@
 
         }
         #take_tour_button:hover{
-            transform:scale(1.02);
+            transform:scale(1.04);
         }
         #trusted_companies{
             display:flex;
@@ -345,6 +345,9 @@
             flex-direction:column;
             gap:0.3rem;
             margin:1rem;
+            width:100vw;
+            box-sizing:border-box;
+            align-self:center;
 
         }
         #testimonial_heading{
@@ -355,13 +358,16 @@
         #testimonial_cards_div{
             display:flex;
             flex-direction:row;
-            justify-content:center;
-            margin:1rem;
+            justify-content:flex-start;
+            padding:1rem;
+
+            box-sizing:none;
+            align-self:center;
             gap:1.4rem;
-/*            flex-wrap:wrap;*/
-            overflow-x:auto;
-            box-sizing:border-box;
-            width:100vw;
+            /*            flex-wrap:wrap;*/
+            overflow-x:scroll;
+            scrollbar-width:none;
+            /*            scrollbar-widht:none to hide that scroll bar */
             max-width:100vw;
         }
         .testimonial_card{
@@ -373,8 +379,12 @@
             height:150px;
             width:300px;
             gap:0.5rem;
-            border-radius:0.2rem;
+            border-radius:0.4rem;
             flex:0 0 auto;
+        }
+        .testimonial_card:hover{
+            transform:scale(1.05);
+            border-color:#6e6ed5;
         }
         .testimonial_text{
             font-size:0.6rem;
@@ -402,6 +412,14 @@
         .person_detail{
             text-align:center;
             font-size:0.6rem;
+        }
+        #newsletter_div{
+            display:flex;
+            flex-direction:row;
+            height:200px;
+            width:60vw;
+            align-self:center;
+            background-color:green;
         }
 
 
@@ -542,79 +560,93 @@
                 </div>
             </div>
             <div id="testimonial_card2" class="testimonial_card">
-                <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                <div class="testimonial_text">"Using StudySync has completely changed the way I
+                    teach. The ready-to-use lesson plans and diverse texts
+                    save me so much time. My students are genuinely excited
+                    to learn again."
                 </div>
                 <img class="person_image" src="assets/profile_pictures/profile2.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">David Rodriguez</span>
+                    <span class="person_detail">10th Grade Social Studies Teacher</span>
                 </div>
             </div>
             <div id="testimonial_card3" class="testimonial_card">
                 <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                    "StudySync has transformed my classroom! The
+                    platform's dynamic content and robust teacher
+                    tools have made my lessons more interactive
+                    and effective. My students are more engaged
+                    than ever before."
                 </div>
                 <img class="person_image" src="assets/profile_pictures/profile3.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">Sarah Chen</span>
+                    <span class="person_detail">7th Grade English Teacher</span>
                 </div>
             </div>
             <div id="testimonial_card4" class="testimonial_card">
                 <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                    "StudySync is a must-have for every
+                    classroom. The multimedia resources and
+                    collaborative features are perfect for
+                    keeping my students hooked. It's user-
+                    friendly and incredibly powerful."
                 </div>
-                <img class="person_image" src="assets/profile_pictures/profile3.png" alt="image"/>
+                <img class="person_image" src="assets/profile_pictures/profile4.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">Mark Johnson</span>
+                    <span class="person_detail">6th Grade ELA Teacher</span>
                 </div>
             </div>
             <div id="testimonial_card5" class="testimonial_card">
                 <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                    "I'm so impressed with StudySync. The curriculum
+                    is perfectly aligned and the support for
+                    teachers is top-notch. It's an essential tool
+                    for fostering critical thinking in my students."
                 </div>
-                <img class="person_image" src="assets/profile_pictures/profile3.png" alt="image"/>
+                <img class="person_image" src="assets/profile_pictures/profile5.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">James Lee</span>
+                    <span class="person_detail">11th Grade History Teacher</span>
                 </div>
             </div>
             <div id="testimonial_card6" class="testimonial_card">
                 <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                    "StudySync is fantastic! It's made my job so much
+                    easier by providing high-quality, pre-made
+                    content. My students' understanding and
+                    enjoyment of the subject have soared since I
+                    started using it."
                 </div>
-                <img class="person_image" src="assets/profile_pictures/profile3.png" alt="image"/>
+                <img class="person_image" src="assets/profile_pictures/profile6.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">Michael Brown</span>
+                    <span class="person_detail">8th Grade Math Teacher</span>
                 </div>
             </div>
             <div id="testimonial_card7" class="testimonial_card">
                 <div class="testimonial_text">
-                    "StudySync revolutionized my classroom! Engaging
-                    content and teacher resources make learning
-                    enjoyable. Highly recommended for educators."
+                    "I can't say enough about StudySync! The program's
+                    engaging resources and insightful professional
+                    development have been invaluable. It's a
+                    game-changer for any educator looking to boost
+                    student participation."
                 </div>
-                <img class="person_image" src="assets/profile_pictures/profile3.png" alt="image"/>
+                <img class="person_image" src="assets/profile_pictures/profile7.png" alt="image"/>
                 <div class="person_detail_div">
-                    <span class="person_name">John Ibrahim</span>
-                    <span class="person_detail">8th Grade English Teacher</span>
+                    <span class="person_name">Emily Carter</span>
+                    <span class="person_detail">9th Grade English Teacher</span>
                 </div>
             </div>
 
         </div>
+    </div>
+<!--    newsletter sec-->
+    <div id="newsletter_div">
+        <img id="newsletter_image" src="" alt="loading..!"/>
+        <div id="newsletter_form_div"></div>
     </div>
 </div>
 
