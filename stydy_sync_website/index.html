@@ -277,12 +277,21 @@
             justify-content:center;
             gap:1.7rem;
         }
-        @media (max-width:1270px){
+
+        @media (max-width:1400px){
             #adv_cards_div{
                 display:flex;
                 flex-wrap:wrap;
             }
         }
+
+        @media screen and (max-width:600px)
+        {
+            #adv_cards_div, #adv_desc{
+                width:60vw;
+            }
+        }
+
         .cards{
             height:200px;
             box-sizing:border-box;
@@ -420,10 +429,16 @@
             width:60vw;
             align-self:center;
             background-color:#26e426c2;
+            border:none;
+            border-radius:4px;
+            overflow:hidden;
+            /*            overflow: hiddent to make both imag and form round cornered*/
+
         }
         #newsletter_image{
             background-color:blue;
             width:50%;
+            display:block;
         }
         #newsletter_form_div{
             background-color:#e4dddd;
@@ -434,6 +449,23 @@
             justify-content:center;
             gap:0.5rem;
         }
+
+        @media screen and (max-width:1261px){
+            #newsletter_image{
+                display:none;
+            }
+            #newsletter_form_div{
+                width:100%;
+            }
+
+        }
+/*        for form to take full width below 640px*/
+        @media screen and (max-width:700px){
+            #newsletter_div{
+                width:100%;
+            }
+        }
+
         #newsletter_form_heading{
             font-size:2rem;
             font-weight:750;
@@ -445,30 +477,42 @@
         #newsletter_form_subheading, #form_footer{
             font-size:0.6rem;
         }
-        input{
+        .text_area{
             padding:0.4rem;
-/*            padding for placeholder from all the sides
-              to add padding from start only use text-indent*/
+            /*            padding for placeholder from all the sides
+                          to add padding from start only use text-indent*/
             width:250px;
             border-radius:0.2rem;
             border:none;
             margin-right:0.2rem;
+            outline:none;
+            /*            outline is the by default border to input field*/
         }
-/*        #input_area:focus{*/
-/*            box-shadow:20px;*/
-/*        }*/
+
+        .text_area:focus{
+        /*            background-color:green;*/
+            border:2px solid blue;
+            box-shadow:4px 2px 4px #5858d684;
+
+        }
 
         #send_button{
             background-color:blue;
-            padding:0.4rem;
-            width:50px;
+            padding:0.4rem 0.8rem;
             color:white;
             border:none;
             border-radius:0.2rem;
 
         }
+        #send_button:hover{
+            background-color:#2d2d8c;
+        }
         .anchor_tag{
             color:blue;
+        }
+
+        #footer{
+            width:60vw;
         }
 
 
@@ -700,7 +744,7 @@
             <div id="newsletter_form_subheading">Sign up for our newsletter</div>
             <form id="input_area_button_div">
                 <label>
-                    <input id="text_area" type="email" placeholder="Email">
+                    <input type="email" class="text_area" placeholder="Email"/>
                 </label>
                 <button id="send_button">Send</button>
             </form>
@@ -710,6 +754,19 @@
         </div>
     </div>
 </div>
+<!--footer sec-->
+<footer id="footer">
+    <div id="footer_detail_div">
+    <div id="footer_name_app_logos_div"></div>
+    <div id="product_etc_div"></div>
+    </div>
+<!--    copyright text at footer-->
+    <div id="copyright_div">
+        <img id="copyright_logo" src="assets/copyright_logo.png" alt="loading"/>
+        <p> 2021-Present StydySync.All rights reserved.</p>
+    </div>
+
+</footer>
 
 
 </body>
