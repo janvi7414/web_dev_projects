@@ -423,11 +423,11 @@
             font-size:0.6rem;
         }
         #newsletter_div{
+            margin:0 auto;
             display:flex;
             flex-direction:row;
             height:250px;
             width:60vw;
-            align-self:center;
             background-color:#26e426c2;
             border:none;
             border-radius:4px;
@@ -513,7 +513,98 @@
 
         #footer{
             width:60vw;
+            display:flex;
+            flex-direction:column;
+            gap:2rem;
+            margin:1rem auto;
+/*            background-color:green;*/
+            padding:1rem;
+
         }
+        #footer_detail_div{
+            display:flex;
+            flex-direction:row;
+
+        }
+        #footer_name_app_logos_div{
+            display:flex;
+            flex-direction:column;
+            gap:1rem;
+            width:40%;
+        }
+        #footer_logo_name{
+            display:flex;
+            flex-direction:row;
+            gap:0.2rem;
+            align-items:center;
+            justify-content:space-between;
+            align-self:flex-start;
+        }
+        #footer_logo{
+            height:1.3rem;
+            width:1.3rem;
+            border:none;
+            border-radius:50%;
+            aspect-ratio:1/1;
+        }
+        #footer_name{
+            font-size:1rem;
+            font-weight:800;
+        }
+        #footer_studysync_desc{
+            font-size:0.6rem;
+
+        }
+        #footer_logos{
+            display:flex;
+            flex-direction:row;
+            justify-content:flex-start;
+            align-items:center;
+            gap:0.5rem;
+        }
+        .footer_logo_image{
+            height:1-.3rem;
+            width:1.3rem;
+            border:none;
+            border-radius:50%;
+            color:grey;
+            aspect-ratio:1/1;
+        }
+        #footer_product_etc_div{
+            display:flex;
+            flex-direction:row;
+            gap:3rem;
+            width:60%;
+            height:400px;
+/*            background-color:red;*/
+            justify-content:space-between;
+        }
+        #footer_product_div{
+            display:flex;
+            flex-direction:column;
+            justify-content:space-between;
+        }
+        .footer_product_etc_term{
+            font-size:0.6rem;
+        }
+        #copyright_div{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            gap:0.2rem;
+        }
+        #copyright_logo{
+            height:0.5rem;
+            width:0.5rem;
+            border:none;
+            border-radius:50%;
+            aspect-ratio:1/1;
+        }
+        #copyright_text{
+            font-size:0.6rem;
+        }
+
 
 
     </style>
@@ -757,13 +848,55 @@
 <!--footer sec-->
 <footer id="footer">
     <div id="footer_detail_div">
-    <div id="footer_name_app_logos_div"></div>
-    <div id="product_etc_div"></div>
+    <div id="footer_name_app_logos_div">
+        <div id="footer_logo_name">
+            <img id="footer_logo" src="assets/pen_logo.png" alt="logo"/>
+            <h2 id="footer_name">StydySync</h2>
+        </div>
+        <p id="footer_studysync_desc">Seamless Learning for Brighter Futures.</p>
+        <div id="footer_logos">
+            <img class="footer_logo_image" src="assets/instagram_logo.png" alt="a">
+            <img class="footer_logo_image" src="assets/twitter_logo.png" alt="a">
+            <img class="footer_logo_image" src="assets/linkedin_logo.png" alt="a">
+            <img class="footer_logo_image" src="assets/github_logo.png" alt="a">
+        </div>
+    </div>
+    <div id="footer_product_etc_div">
+        <div class="footer_product_div">
+            <h4>Products</h4>
+            <p class="footer_product_etc_term">Overview</p>
+            <p class="footer_product_etc_term">Solutions</p>
+            <p class="footer_product_etc_term">Pricing</p>
+            <p class="footer_product_etc_term">Customers</p>
+        </div>
+        <div class="footer_product_div">
+            <h4>Company</h4>
+            <p class="footer_product_etc_term">About</p>
+            <p class="footer_product_etc_term">Investor Relations</p>
+            <p class="footer_product_etc_term">Jobs</p>
+            <p class="footer_product_etc_term">Press</p>
+            <p class="footer_product_etc_term">Blog</p>
+
+        </div>
+        <div class="footer_product_div">
+            <h4>Support</h4>
+            <p class="footer_product_etc_term">Contact</p>
+            <p class="footer_product_etc_term">Documentation</p>
+            <p class="footer_product_etc_term">Chat</p>
+            <p class="footer_product_etc_term">FAQ</p>
+        </div>
+        <div class="footer_product_div">
+            <h4>Legal</h4>
+            <p class="footer_product_etc_term">Terms of Service</p>
+            <p class="footer_product_etc_term">Privacy Policy</p>
+            <p class="footer_product_etc_term">Cookie settings</p>
+        </div>
+    </div>
     </div>
 <!--    copyright text at footer-->
     <div id="copyright_div">
         <img id="copyright_logo" src="assets/copyright_logo.png" alt="loading"/>
-        <p> 2021-Present StydySync.All rights reserved.</p>
+        <p id="copyright_text"> 2021-Present StydySync.All rights reserved.</p>
     </div>
 
 </footer>
