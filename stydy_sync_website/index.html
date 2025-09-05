@@ -590,6 +590,40 @@
         .footer_product_etc_term{
             font-size:0.6rem;
         }
+        @media screen and (max-width:1030px)
+        {
+            #footer_detail_div{
+                flex-direction:column;
+                width:100%;
+                gap:2rem;
+                height:400px;
+                align-self:center;
+            }
+            #footer_name_app_logos_div{
+                margin:0 auto;
+            }
+            #footer_product_etc_div{
+                justify-content:space-between;
+                width:100%;
+
+            }
+        }
+        @media screen and (max-width:770px){
+            #footer_name_app_logos_div{
+                margin:0 auto;
+            }
+            #footer_detail_div{
+                height:450px;
+            }
+            #footer_product_etc_div{
+                display:grid;
+                grid-template-columns:repeat(2,1fr);
+                grid-template-rows:repeat(2,1fr);
+                gap:2rem;
+                justify-content:space-between;
+
+            }
+        }
         #copyright_div{
             display:flex;
             flex-direction:row;
