@@ -524,6 +524,7 @@
         #footer_detail_div{
             display:flex;
             flex-direction:row;
+            height:400px;
 
         }
         #footer_name_app_logos_div{
@@ -582,7 +583,8 @@
         #footer_product_div{
             display:flex;
             flex-direction:column;
-            justify-content:space-between;
+            gap:8px;
+            justify-content:flex-end;
         }
         .footer_product_etc_term{
             font-size:0.6rem;
@@ -593,6 +595,9 @@
             justify-content:center;
             align-items:center;
             gap:0.2rem;
+        }
+        .footer_product_etc_term{
+            display:flex;
         }
         #copyright_logo{
             height:0.5rem;
@@ -886,7 +891,7 @@
             <p class="footer_product_etc_term">FAQ</p>
         </div>
         <div class="footer_product_div">
-            <h4>Legal</h4>
+            <h4 class="footer_product_etc_term">Legal</h4>
             <p class="footer_product_etc_term">Terms of Service</p>
             <p class="footer_product_etc_term">Privacy Policy</p>
             <p class="footer_product_etc_term">Cookie settings</p>
