@@ -132,7 +132,7 @@
             }
         }
         #body1_image{
-            background-color:blue;
+/*            background-color:blue;*/
             height:400px;
             width:400px;
             border-radius:1.6rem;
@@ -428,7 +428,7 @@
             flex-direction:row;
             height:250px;
             width:60vw;
-            background-color:#26e426c2;
+/*            background-color:#26e426c2;*/
             border:none;
             border-radius:4px;
             overflow:hidden;
@@ -436,9 +436,11 @@
 
         }
         #newsletter_image{
-            background-color:blue;
+/*            background-color:blue;*/
             width:50%;
             display:block;
+            aspect-ratio:1/1;
+            overflow:hidden;
         }
         #newsletter_form_div{
             background-color:#e4dddd;
@@ -516,7 +518,7 @@
             display:flex;
             flex-direction:column;
             gap:2rem;
-            margin:1rem auto;
+            margin:2rem auto;
 /*            background-color:green;*/
             padding:1rem;
 
@@ -524,7 +526,7 @@
         #footer_detail_div{
             display:flex;
             flex-direction:row;
-            height:400px;
+            height:200px;
 
         }
         #footer_name_app_logos_div{
@@ -574,17 +576,16 @@
         #footer_product_etc_div{
             display:flex;
             flex-direction:row;
-            gap:3rem;
+            justify-content:space-around;
             width:60%;
-            height:400px;
+            height:150px;
 /*            background-color:red;*/
-            justify-content:space-between;
         }
-        #footer_product_div{
+        .footer_product_div{
             display:flex;
             flex-direction:column;
-            gap:8px;
-            justify-content:flex-end;
+            gap:1rem;
+            justify-content:flex-start;
         }
         .footer_product_etc_term{
             font-size:0.6rem;
@@ -652,7 +653,7 @@
                 <a id="take_tour_button" href="#">Take tour</a>
             </span>
         </div>
-        <div id="body1_image"></div>
+        <img id="body1_image" alt="a" src="assets/college_boy_image.png"/>
     </div>
     <div id="trusted_companies">
         <span id="trusted_companies_text">Trusted by the best</span>
@@ -834,7 +835,7 @@
     </div>
 <!--    newsletter sec-->
     <div id="newsletter_div">
-        <img id="newsletter_image" src="" alt=""/>
+        <img id="newsletter_image" src="assets/student_image.png" alt="a"/>
         <div id="newsletter_form_div">
             <div id="newsletter_form_heading">Get the latest updates</div>
             <div id="newsletter_form_subheading">Sign up for our newsletter</div>
@@ -891,7 +892,7 @@
             <p class="footer_product_etc_term">FAQ</p>
         </div>
         <div class="footer_product_div">
-            <h4 class="footer_product_etc_term">Legal</h4>
+            <h4>Legal</h4>
             <p class="footer_product_etc_term">Terms of Service</p>
             <p class="footer_product_etc_term">Privacy Policy</p>
             <p class="footer_product_etc_term">Cookie settings</p>
