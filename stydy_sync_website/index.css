@@ -33,6 +33,7 @@
     border-radius:50%;
     color:blue;
     margin:auto;
+    background-color:white;
 }
 #name{
     font-size:2rem;
@@ -86,6 +87,41 @@
     height:1.5rem;
     width:1.5rem;
 }
+#dark_theme_button {
+    height:2rem;
+    width:2rem;
+    margin:auto;
+    border: none;
+    border-radius:50%;
+    color: white;
+    cursor: pointer;
+    position:fixed;
+    top:20px;
+    right:20px;
+}
+
+.dark ,.dark .nav_option_item{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+}
+.dark .nav_option_item:hover{
+    color:#0000ff;
+}
+.dark #adv_text, .dark #adv_desc,.dark #newsletter_form_subheading, .dark #form_footer{
+    color:black;
+    transition: 0.3s ease;
+}
+.dark #newsletter_image, .dark #footer_logo, .dark .footer_logo_image{
+    background-color:white;
+}
+.dark #take_tour_button{
+    background-color:white;
+    color:black;
+    border: solid white 0.2rem;
+}
+
+
 @media screen and (max-width:860px){
     #nav_options, #contact_div{
         display:none;
@@ -636,6 +672,7 @@
     border:none;
     border-radius:50%;
     aspect-ratio:1/1;
+    background-color:white;
 }
 #copyright_text{
     font-size:0.6rem;
