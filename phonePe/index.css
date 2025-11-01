@@ -7,7 +7,7 @@
 
 #logoImage{
    width:100%;
-
+    padding:0.2rem;
 }
 #logo{
     box-sizing:border-box;
@@ -29,10 +29,13 @@
     flex-direction:row;
     justify-content:flex-start;
     align-items:center;
-    gap:3rem;
+
 }
 .navItem{
-
+    padding:1.5rem;
+    font-size:0.85rem;
+    text-decoration:none;
+    color:black;
 }
 #slidingBackground{
     height:100vh;
@@ -67,15 +70,23 @@
     padding-bottom:1rem;
 }
 .tileTitle{
-    font-size:2.5rem;
+    font-size:2.25rem;
 }
-.tileDesc{font-size:1.25rem;
+.tileDesc{
+    font-size:1.05rem;
+    color:#6a6969;
 }
-.arrowIcon{
+.arrowImageDiv{
     height:10%;
     width:10%;
     align-self:flex-end;
 }
+
+.arrowIcon{
+    width:100%;
+    height:100%;
+}
+
 #transactionBackground{
     height:800px;
     background:linear-gradient(black,indigo);
@@ -87,12 +98,12 @@
     justify-content:center;
     align-items:center;
     gap:2rem;
-    padding:1rem;
+    padding:2rem;
 }
 #transactionTitle{
     color:#b99dd3;
     font-size:2.25rem;
-    width:25%;
+    width:30%;
     margin:auto;
     text-align:center;
 }
@@ -109,6 +120,7 @@
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
+    gap:1rem;
 }
 .upiOptionTitle{
     color:white;
@@ -128,8 +140,8 @@
 
 }
 #bankImage{
-    height:250px;
-    width:250px;
+    height:230px;
+    width:230px;
     align-self:center;
 }
 #creditCardImage{
@@ -165,7 +177,6 @@
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    gap:2rem;
 }
 #phoneImage{
     height:600px;
@@ -175,8 +186,67 @@
 #phoneImageDesc{
     text-align:center;
     width:30%;
-    font-size:3.25rem;
+    font-size:3rem;
+    font-weight:530;
+}
+#safetyDashboard{
+    width:100vw;
+    height:600px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
 
+}
+#playButtonImage{
+    height:150px;
+    width:150px;
+    margin:2rem;
+}
+#safetyTitle{
+    font-size:2.8rem;
+    text-align:center;
+    width:50%;
+    font-weight:545;
+}
+#safetyDesc{
+    font-size:1.35rem;
+    width:55%;
+    text-align:center;
+    line-height:2rem;
+    color:#575555;
+}
+#aboutDashboard{
+    width:100vw;
+    height:1200px;
+    display:flex;
+    flex-direction:row;
+    padding:2rem;
+    padding-left:7rem;
+    gap:3rem;
+}
+.aboutDiv{
+    height:100%;
+    width:10%;
+    display:flex;
+    flex-direction:column;
+    gap:1.15rem;
+}
+#aboutDivLogo{
+    width:100%;
+    height:3.5%;
+}
+.aboutDivTitle{
+    text-decoration:none;
+    color:black;
+    font-weight:530;
+    letter-spacing:-0.7px;
+    font-size:1.05rem;
+}
+.aboutDivSubtitle{
+    text-decoration:none;
+    letter-spacing:-0.9px;
+    color:#535151;
 }
 
 
