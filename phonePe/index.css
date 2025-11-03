@@ -36,18 +36,47 @@
     font-size:0.85rem;
     text-decoration:none;
     color:black;
+    position: relative;
+    display: inline-block;
 }
+#companyDropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdownAnchor {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 6px 0;
+    text-align: left;
+}
+
+#companyAnchor{
+    text-decoration:none;
+    color:black;
+}
+
+#companyNav:hover #companyDropdown {
+    display: block;
+}
+
 #slidingBackground{
     height:100vh;
     width:100vw;
-    background:linear-gradient(#9766df84,white);
+    background:linear-gradient(#6921cf84,white);
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
 }
 #slidingText1{
-    color:#430e53;
+    color:#681280;
     font-size:3rem;
     text-align:center;
     font-weight:550;
@@ -63,6 +92,26 @@
 }
 #slidingImage1{
     background:none;
+}
+#slidingText1Subheading{
+    font-size:1.5rem;
+    color:#71178a;
+}
+#startNowDiv{
+    width:15%;
+    height:10%;
+    background-color:#681280;
+    margin:1.5rem;
+    border-radius:3rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#startNowText{
+    color:white;
+    font-size:1.4rem;
+    text-align:center;
+
 }
 #tileDiv{
     display:flex;
@@ -239,8 +288,7 @@
     height:600px;
     display:flex;
     flex-direction:row;
-    padding:2rem;
-    padding-left:7rem;
+    padding:2rem 2rem 1rem 7rem;
     gap:3rem;
 }
 .aboutDiv{
@@ -257,9 +305,10 @@
 .aboutDivTitle{
     text-decoration:none;
     color:black;
-    font-weight:530;
+    font-weight:550;
     letter-spacing:-0.7px;
     font-size:1.05rem;
+    margin:1rem 0rem;
 }
 .aboutDivSubtitle{
     text-decoration:none;
